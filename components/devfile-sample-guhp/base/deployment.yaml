@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-guhp
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:karthik-jk-dev-tenant-devfile-sample-guhp
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4648b335a1042fc5b5e54af66ebcfddf2cb7db3832abeba48da6006eb7aff968
         name: my-nodejs
         ports:
         - containerPort: 3001
