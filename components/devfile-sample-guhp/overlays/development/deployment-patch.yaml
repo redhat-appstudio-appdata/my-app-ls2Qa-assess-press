@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-guhp
+  namespace: karthik-jk-dev-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4648b335a1042fc5b5e54af66ebcfddf2cb7db3832abeba48da6006eb7aff968
+        name: my-nodejs
+        resources: {}
+status: {}
